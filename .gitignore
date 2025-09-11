@@ -47,3 +47,57 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# Quarto / R Markdown
+*_cache/
+*.knit.md
+*.utf8.md
+*.nb.html
+.quarto/
+_site/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Notebooks
+*.ipynb_checkpoints
+
+# Editors
+.vscode/
+.idea/
+
+# Excel temp files
+~$*.xlsx
+
+# Data and outputs (keep folders with .gitkeep)
+data/raw/
+output/
+!data/.gitkeep
+!output/.gitkeep
