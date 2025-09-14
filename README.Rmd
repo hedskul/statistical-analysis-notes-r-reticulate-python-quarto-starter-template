@@ -9,10 +9,6 @@ knitr::opts_chunk$set(
   echo = TRUE,
   fig.path = "figs/"
 )
-# if (!requireNamespace("rmarkdown", quietly = TRUE)) install.packages("rmarkdown")
-# if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-# if (!renv::project()) renv::activate()
-# renv::snapshot()
 ```
 
 Math notes - Quarto starter template (.qmd) R -\> reticulate -\> Python
@@ -22,16 +18,19 @@ Math notes - Quarto starter template (.qmd) R -\> reticulate -\> Python
 2: Install RStudio RStudio requires R 3.6.0+. Choose a version of R that matches your computer’s operating system. <https://posit.co/download/rstudio-desktop/>
 
 **File - Open Project**
+---
+title: "apache-iceberg-spark-hive-docker-wsl-gradle"
+author: "hedskul"
+date: "`r Sys.Date()`"
+output: github_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  fig.path = "figs/"
+)
 
-``` r
-install.packages("renv")
-renv::restore()
 ```
-
-<!-- renv::init() -->
-<!-- renv::activate() -->
-<!-- renv::snapshot() -->
-
 ## Requirements
 
 install Linux on Windows with WSL.
@@ -66,21 +65,13 @@ Browse to apache-iceberg-spark-hive-docker-wsl-gradle.Rproj
 
 ``` r
 install.packages("renv")
-renv::init()
-renv::activate()
-renv::snapshot()
-
-
-renv::activate()
-install.packages("rmarkdown")
-renv::snapshot()
-
-install.packages("renv")
-renv::init()
 renv::restore()
 ```
 
-
+# python interop
+# create/point to a Python env
+# then in R:
+# reticulate::py_config()
 
 ## Including Code
 
@@ -99,6 +90,9 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
 
 
 # ```{r a}

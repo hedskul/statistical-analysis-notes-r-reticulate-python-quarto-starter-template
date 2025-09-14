@@ -25,3 +25,21 @@ renv::install(c(
 
 #lock
 renv::snapshot()  
+
+# if (!requireNamespace("rmarkdown", quietly = TRUE)) install.packages("rmarkdown")
+# if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+# if (!renv::project()) renv::activate()
+# renv::snapshot()
+
+
+# # if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+# #
+# # if (!renv::project()) renv::activate()
+# 
+# required <- c("reticulate", "knitr", "rmarkdown")
+# for (pkg in required) {
+#   if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
+# }
+# 
+# # Set global chunk options
+# knitr::opts_chunk$set(echo = TRUE)
