@@ -32,6 +32,12 @@ renv::snapshot()
 # renv::snapshot()
 
 
+
+
+
+
+
+
 # # if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
 # #
 # # if (!renv::project()) renv::activate()
