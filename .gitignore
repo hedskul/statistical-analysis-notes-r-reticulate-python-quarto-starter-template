@@ -31,6 +31,10 @@ output/
 .env.*.local
 
 *.pyc
+*.ipynb
+_site/
+_book/
+*.aux
 
 #
 # pyhton - github - gitignore

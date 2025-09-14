@@ -1,5 +1,5 @@
 project:
   title: "statistical-analysis-notes-r-reticulate-python-quarto-starter-template"
-
+  type: website
+output-dir: _site
 editor: visual
-
