@@ -12,71 +12,293 @@ Quarto enables you to weave together content and executable code into a finished
 ```{r}
 1 + 1
 ```
+xᵢ = individual value
+Σx = sum of values
+N = population size
+n = sample size
 
-μ is the population mean. Σx is the sum of values. N is population size.
+μ = population mean
+μ = Σxᵢ ÷ N
+
+x̄ = sample mean
+x̄ = Σxᵢ ÷ n
+
+σ² = population variance
+σ = population standard deviation
+σ² = Σ(xᵢ − μ)² ÷ N
+σ = √σ²
+
+s² = sample variance
+s = sample standard deviation
+s² = Σ(xᵢ − x̄)² ÷ (n − 1)
+s = √s²
+
+Deviation (population) = xᵢ − μ
+Deviation (sample) = xᵢ − x̄
+
+Mean and Skewed Distributions
 
 Extreme values in the tail of a distribution tend to pull the mean in the direction of the tail.
-In skewed-right distributions, the large observations in the right tail increase the value of the mean but have little effect on the median.
 
-The median is at point B because B roughly divides the area under the curve into two equal parts. The median is the value that lies in the middle of the data when the values are arranged in ascending order.
+In a skewed-right distribution, large values in the right tail increase the mean but have little effect on the median.
 
-The mode is at point A because A is at the peak of the distribution. This peak corresponds to the most frequent observation of the variable in the data set.
+The median the area under the curve into two equal parts.
 
-The mean is calculated by summing all the values and dividing by the number of values. For {2, 4, 6, 8, 10}, the sum is 30, and there are 5 values, so the mean is 6.
+The mode is the peak (most frequent value).
+
+Calculating the Mean
+
+Add all values and divide by the number of values.
+
+Example: {2, 4, 6, 8, 10} → mean = 30 ÷ 5 = 6
+
+Deviation
 
 Deviation = xᵢ − μ
 
+xᵢ = individual value
+
 μ = population mean
 
-xᵢ = value in question
+Example: deviation of 4 from mean 6 → 4 − 6 = −2
 
-Σx = sum of all values
+Sum of Deviations
+
+The sum of the deviations from the mean is always zero.
+
+This is because the mean is the balance point of the data set.
+
+Example: deviations of −2, 0, and 2 sum to 0
+
+Proof Using Formulas
+
+Population mean: μ = Σxᵢ ÷ N
+
+Sum of deviations:
+Σ(xᵢ − μ) = Σxᵢ − Nμ = Σxᵢ − Σxᵢ = 0
+
+
+Sum of deviations:
+Σ(xᵢ − x̄) = Σxᵢ − n·x̄ = Σxᵢ − Σxᵢ = 0
+
+Sample mean: x̄ = Σxᵢ ÷ n
+
+Standard Deviation
+
+Describes how far, on average, each observation is from the mean
+
+Used with the mean to describe bell-shaped, symmetric distributions
+
+Mean = center
+
+Standard deviation = spread
+
+Formulas
+
+Population variance (σ²)
+σ² = Σ(xᵢ − μ)² ÷ N
+
+Sample variance (s²)
+s² = Σ(xᵢ − x̄)² ÷ (n − 1)
+
+Alternate sample variance formula:
+s² = [Σxᵢ² − (Σxᵢ)² ÷ n] ÷ (n − 1)
+
+Standard deviation is the square root of the variance
+
+Examples
+
+Range: $451 − $239 = $212
+
+Sample variance: 9234 dollars²
+
+Sample standard deviation: 96.27 dollars
+
+Histograms and Spread
+
+Higher standard deviation = greater dispersion
+
+Compare means, medians, and how spread out the data is
+
+Use standard deviation to measure consistency
+
+Higher s.d. → less consistent
+
+Lower s.d. → more consistent
+
+
+## Core Definitions
+
+xᵢ = individual value
+
+Σx = sum of values
 
 N = population size
 
-The deviation is calculated as the value minus the mean. For the value 4 and mean 6, the deviation is 4 − 6 = −2.
+n = sample size
 
-The sum of the deviations from the mean is always zero because the mean is the balance point of the data set. The deviations are -2, 0, and 2, which sum to zero.
+## Measures of Center
 
-The sum of the deviations about the mean always equals zero.
+μ = population mean
+μ = Σxᵢ ÷ N
 
-Since the population mean is
-μ = Σxᵢ ÷ N,
-the sum of the deviations about the mean,
-Σ(xᵢ − μ),
-can be rewritten as
-Σxᵢ − Nμ.
-But since μ = Σxᵢ ÷ N, then Nμ = Σxᵢ,
-so the expression becomes Σxᵢ − Σxᵢ, which equals 0.
+x̄ = sample mean
+x̄ = Σxᵢ ÷ n
 
-Similarly, since the sample mean is
-x̄ = Σxᵢ ÷ n,
-the sum of the deviations about the mean,
-Σ(xᵢ − x̄),
-can be rewritten as
-Σxᵢ − n·x̄.
-But since x̄ = Σxᵢ ÷ n, then n·x̄ = Σxᵢ,
-so again, the expression becomes Σxᵢ − Σxᵢ, which equals 0.
+Median = middle value when sorted (no formula)
 
-Recall that the mean of a variable is computed by determining the sum of all the values of the variable in the data set and dividing by the number of observations.
+Mode = most frequent value (no formula)
 
-The standard deviation describes how far, on average, each observation is from the mean.
+## Measures of Spread
 
-Note that the standard deviation and the mean are the most popular methods for numerically describing the distribution of a variable. This is because these two measures are used for most types of statistical inference.
+Range = max − min
 
-Therefore, the standard deviation is used in conjunction with the mean to numerically describe distributions that are bell shaped and symmetric.
+σ² = population variance
+σ² = Σ(xᵢ − μ)² ÷ N
 
-The mean measures the center of the distribution, while the standard deviation measures the spread of the distribution.
-
-σ² is population variance
-
-s² = Σ(xᵢ − x̄)² ÷ (n − 1)
+σ = population standard deviation
+σ = √σ²
 
 s² = sample variance
-
-xᵢ individual value
-
-sample variance
-s² = [ Σxᵢ² − ( (Σxᵢ)² ÷ n ) ] ÷ (n − 1)
-
 s² = Σ(xᵢ − x̄)² ÷ (n − 1)
+
+s = sample standard deviation
+s = √s²
+
+Alternate sample variance formula (shortcut):
+s² = [Σxᵢ² − (Σxᵢ)² ÷ n] ÷ (n − 1)
+
+## Deviation Formulas
+
+Deviation from population mean:
+xᵢ − μ
+
+Deviation from sample mean:
+xᵢ − x̄
+
+Sum of deviations:
+Σ(xᵢ − μ) = 0
+Σ(xᵢ − x̄) = 0
+
+## Special Case
+
+A standard deviation of 0 means no spread
+→ All values are identical
+
+## z-score
+
+Population z-score:
+z = (xᵢ − μ) ÷ σ
+
+Sample z-score:
+z = (xᵢ − x̄) ÷ s
+
+## Empirical Rule (68–95–99.7 Rule)
+
+For bell-shaped (normal) distributions:
+
+~68% of data within 1σ of mean
+
+~95% within 2σ
+
+~99.7% within 3σ
+
+## Five-Number Summary (for boxplots)
+
+Minimum
+Q1 (first quartile)
+Median
+Q3 (third quartile)
+Maximum
+
+## Extra credit
+
+Coefficient of Variation (CV):
+CV = (s ÷ x̄) × 100% — compares spread between datasets
+
+Interquartile Range (IQR):
+IQR = Q3 − Q1 — measure of spread resistant to outliers
+
+## Shape of the Distribution
+
+Symmetric: Left and right sides are roughly mirror images
+
+Bell-shaped: Symmetric and mound-shaped (normal distribution)
+
+Skewed right: Tail stretches to the right (mean > median)
+
+Skewed left: Tail stretches to the left (mean < median)
+
+Uniform: All values occur with roughly the same frequency
+
+Bimodal: Two distinct peaks
+
+## Center
+
+Look at the mean (average)
+
+Check the median (middle value)
+
+For symmetric distributions: mean ≈ median
+
+For skewed distributions: mean is pulled toward the tail
+
+## Spread
+
+How wide is the distribution?
+
+Are the data points close to the center or spread out?
+
+Check range (max − min)
+
+Use standard deviation or IQR (interquartile range)
+
+## Outliers
+
+Any values that are far from the rest of the data
+
+May appear as isolated bars or points
+
+Can greatly affect the mean and standard deviation
+
+Less effect on median and IQR
+
+## Peaks (Mode)
+
+Unimodal: One peak (most frequent value)
+
+Bimodal: Two peaks
+
+Multimodal: More than two peaks
+
+The mode is the value at the highest peak
+
+## Comparing Distributions
+
+When comparing two graphs:
+
+Compare center: Which has a higher mean or median?
+
+Compare spread: Which is more consistent?
+
+Look at shape: Are both symmetric or skewed?
+
+Use same scale and units to make valid comparisons
+
+## Histogram
+
+Bars touch in a histogram (quantitative data)
+
+Check class width (bar width) — should be equal
+
+Heights of bars show frequency or relative frequency
+
+## Extra credit - Boxplot
+
+Box shows Q1, median, Q3
+
+Whiskers extend to min and max (excluding outliers)
+
+Outliers often shown as dots
+
+Skewed if median is not centered in the box
