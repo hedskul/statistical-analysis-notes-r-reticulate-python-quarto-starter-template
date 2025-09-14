@@ -37,3 +37,46 @@ N = population size
 The deviation is calculated as the value minus the mean. For the value 4 and mean 6, the deviation is 4 − 6 = −2.
 
 The sum of the deviations from the mean is always zero because the mean is the balance point of the data set. The deviations are -2, 0, and 2, which sum to zero.
+
+The sum of the deviations about the mean always equals zero.
+
+Since the population mean is
+μ = Σxᵢ ÷ N,
+the sum of the deviations about the mean,
+Σ(xᵢ − μ),
+can be rewritten as
+Σxᵢ − Nμ.
+But since μ = Σxᵢ ÷ N, then Nμ = Σxᵢ,
+so the expression becomes Σxᵢ − Σxᵢ, which equals 0.
+
+Similarly, since the sample mean is
+x̄ = Σxᵢ ÷ n,
+the sum of the deviations about the mean,
+Σ(xᵢ − x̄),
+can be rewritten as
+Σxᵢ − n·x̄.
+But since x̄ = Σxᵢ ÷ n, then n·x̄ = Σxᵢ,
+so again, the expression becomes Σxᵢ − Σxᵢ, which equals 0.
+
+Recall that the mean of a variable is computed by determining the sum of all the values of the variable in the data set and dividing by the number of observations.
+
+The standard deviation describes how far, on average, each observation is from the mean.
+
+Note that the standard deviation and the mean are the most popular methods for numerically describing the distribution of a variable. This is because these two measures are used for most types of statistical inference.
+
+Therefore, the standard deviation is used in conjunction with the mean to numerically describe distributions that are bell shaped and symmetric.
+
+The mean measures the center of the distribution, while the standard deviation measures the spread of the distribution.
+
+σ² is population variance
+
+s² = Σ(xᵢ − x̄)² ÷ (n − 1)
+
+s² = sample variance
+
+xᵢ individual value
+
+sample variance
+s² = [ Σxᵢ² − ( (Σxᵢ)² ÷ n ) ] ÷ (n − 1)
+
+s² = Σ(xᵢ − x̄)² ÷ (n − 1)
