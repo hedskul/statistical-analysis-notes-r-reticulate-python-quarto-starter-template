@@ -12,8 +12,28 @@ Quarto enables you to weave together content and executable code into a finished
 ```{r}
 1 + 1
 ```
+
 μ is the population mean. Σx is the sum of values. N is population size.
 
-The mean is at C because C is the value furthest to the right and the distribution is skewed right. Extreme values in the tail of a distribution tend to pull the mean in the direction of the​ tail; in​ skewed-right distributions, the large observations in the right tail increase the value of the​ mean, but have little effect on the median.
-The median is at B because B roughly divides the area under the curve into two equal​ parts, and the median is the value that lies in the middle of the data when arranged in ascending order.
-The mode is at A because A is at the peak of the​ distribution, which corresponds to the most frequent observation of the variable that occurs in the data set.
+Extreme values in the tail of a distribution tend to pull the mean in the direction of the tail.
+In skewed-right distributions, the large observations in the right tail increase the value of the mean but have little effect on the median.
+
+The median is at point B because B roughly divides the area under the curve into two equal parts. The median is the value that lies in the middle of the data when the values are arranged in ascending order.
+
+The mode is at point A because A is at the peak of the distribution. This peak corresponds to the most frequent observation of the variable in the data set.
+
+The mean is calculated by summing all the values and dividing by the number of values. For {2, 4, 6, 8, 10}, the sum is 30, and there are 5 values, so the mean is 6.
+
+Deviation = xᵢ − μ
+
+μ = population mean
+
+xᵢ = value in question
+
+Σx = sum of all values
+
+N = population size
+
+The deviation is calculated as the value minus the mean. For the value 4 and mean 6, the deviation is 4 − 6 = −2.
+
+The sum of the deviations from the mean is always zero because the mean is the balance point of the data set. The deviations are -2, 0, and 2, which sum to zero.
