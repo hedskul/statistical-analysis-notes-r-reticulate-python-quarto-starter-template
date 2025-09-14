@@ -3,3 +3,6 @@ project:
   type: website
 output-dir: _site
 editor: visual
+exclude:
+  - professor/**
+  - _professor/**
