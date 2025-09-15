@@ -303,11 +303,11 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+/.quarto/
+
 #
 # github - desktop
 # This diff contains a change in line endings from 'LF' to 'CRLF'.
 #
 /professor
-
-/.quarto/
 /_professor
