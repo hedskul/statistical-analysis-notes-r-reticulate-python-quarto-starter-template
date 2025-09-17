@@ -302,3 +302,14 @@ Whiskers extend to min and max (excluding outliers)
 Outliers often shown as dots
 
 Skewed if median is not centered in the box
+
+### Empirical Rule
+
+the Empirical Rule states that 68% of the data falls
+within one standard deviation of the mean.
+It represents the range within one standard deviation (σ) of the mean (μ)
+μ = population mean
+σ = population standard deviation
+μ ± 1σ = 68%
+
+
